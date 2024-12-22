@@ -1,0 +1,258 @@
+header {
+    min-height: 80vh;
+    padding-top: 7rem;
+    overflow: hidden;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#header h5{
+  font-size: .9rem; 
+  color: var(--color-light);  
+}
+
+.header__container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+.header_socials {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    left: 6rem;
+    vertical-align: middle;
+    font-size: 1.6rem;
+    margin-bottom: 0;
+}
+.header_socials::after {
+    content: "";
+    width: 1px;
+    height: 2.5rem;
+    background: var(--color-primary);
+}
+
+.header__container h5 {
+    font-size: 1.4rem;
+}
+
+
+/*============= Mediam device ==============*/
+:root {
+  --surface-color: #002c66;
+  --curve: 40;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.live {
+    color: var(--color-primary);
+    margin-top: 5rem;
+}
+.btnn {
+    width: max-content;
+    display: inline-block;
+    color: #202066;
+    background: #098ce9;
+    padding: 0.3rem 1rem;
+    border-radius: 0.4rem;
+    cursor: default;
+    border: .5px solid var(--color-primary);
+    transition: var(--transition);
+    font-size: small;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.btnn:hover {
+    color: rgb(167, 44, 44);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 0 auto;
+    padding-bottom: 0 auto;
+    padding: 3rem 3rem 0rem;
+    list-style-type: none;
+    overflow: hidden;
+
+  }
+  
+  .card {
+    position: relative;
+    display: block;
+    height: 100%;  
+    border-radius: calc(var(--curve) * 1px);
+    overflow: hidden;
+    text-decoration: none;
+    border: 2px solid rgb(3, 83, 255);
+  }
+  
+  .card__image {      
+    width: 100%;
+    height: auto;
+  }
+  
+  .card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;      
+    border-radius: calc(var(--curve) * 1px);    
+    background-color: var(--surface-color);      
+    transform: translateY(100%);
+    transition: .2s ease-in-out;
+  }
+  
+  .card:hover .card__overlay {
+    transform: translateY(0);
+  }
+  
+  .card__header p{
+    font-size: .6rem;
+    text-align: start;
+  }
+  
+  .card__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    border-radius: calc(var(--curve) * 1px) 0 0 0;    
+    background-color: var(--surface-color);
+    transform: translateY(-100%);
+    transition: .2s ease-in-out;
+  }
+  
+  .card__arc {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 100%;
+    right: 0;      
+    z-index: 1;
+  }
+  
+  .card__arc path {
+    fill: var(--surface-color);
+    d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+  }       
+  
+  .card:hover .card__header {
+    transform: translateY(0);
+  }
+  
+  .card__thumb {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;      
+    border-radius: 50%;      
+  }
+  
+  .card__title {
+    font-size: .9em;
+    margin: 0 0 .3em;
+    color: rgb(255, 255, 255);
+  }
+
+  .tcolor {
+    color: #5bb6f7;
+    font-size: 1.1em;
+  }
+  
+/*============= Mediam device ==============*/
+@media screen and (max-width: 1700px) {
+    .header{
+        min-height: 68vh;
+    }
+    .cards {
+        grid-template-columns: repeat(3, minmax(300px, 1fr));
+      }
+}
+@media screen and (max-width: 1350px) {
+    .header{
+        min-height: 68vh;
+    }
+    .cards {
+        grid-template-columns: repeat(3, minmax(260px, 1fr));
+      }     
+      .header_socials {
+        left: 2rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .header{
+        min-height: 68vh;
+    }
+    .cards {
+        grid-template-columns: repeat(2, minmax(290px, 1fr));
+      }
+}
+
+@media screen and (max-width: 1024px) {
+    .header{
+        min-height: 68vh;
+    }
+    .cards {
+        grid-template-columns: repeat(2, minmax(290px, 1fr));
+      }
+      .header_socials {
+        left: 1rem;
+    }
+}
+@media screen and (max-width: 780px) {
+    .header{
+        min-height: 68vh;
+    }
+    .cards {
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
+      }
+      .header_socials {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .header{
+        height: 100vh;
+    }
+    .header_socials {
+        display: none;
+    }
+    .scroll_down {
+        font-size: 1.5rem; 
+    }
+    .scroll_up {
+        font-size: 1.5rem;
+    }
+    .header__container {
+        font-size: .8rem;
+    }
+    .header__container h1 {
+        font-size: 1.5rem;
+    }
+    .cards {
+        grid-template-columns: repeat(1, minmax(250px, 1fr));
+
+      }
+    
+}

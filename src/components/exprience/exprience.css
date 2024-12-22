@@ -1,0 +1,69 @@
+.exprience-container {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    gap: 2rem;
+    
+}
+.exprience-container > div {
+    background: var(--color-bg-variant);
+    padding: 2.4rem 5rem;
+    border: 1px solid transparent;
+    border-radius: 2rem;
+    transition: var(--transition);
+}
+.exprience-container > div:hover {
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+}
+.exprience-container > div h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+    font-size: 1.3rem;
+}
+.exprience-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+}
+.exprience-details { 
+    display: flex;
+    gap: 1rem;
+}
+.icon {
+    margin-top: 1rem;
+    color: var(--color-primary);
+    font-size: 1.7rem;
+}
+
+/*============= Medeia Query ==============*/
+@media screen and (max-width: 1124px) {
+    .exprience-container {
+        grid-template-columns:  1fr;
+    }
+    .exprience-container > div {
+        padding: 1.7rem;
+    }
+    .exprience-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 2rem;
+    }
+    .exprience-details {
+      
+        justify-content: center; 
+    }
+}
+@media screen and (max-width: 600px) {
+    .exprience-container {
+        gap: 1rem;
+    }
+    .exprience-container > div {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+    .exprience-content {
+        
+    }
+}

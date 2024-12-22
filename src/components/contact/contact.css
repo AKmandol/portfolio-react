@@ -1,0 +1,78 @@
+.container.contact-container {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 35% 60%;
+    gap: 5%;
+}
+.contact-options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.contact-option {
+    background: var(--color-bg-variant);
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+.contact-option:hover {
+    background: transparent;
+    border-color: var(--color-primary-variant);
+}
+.contact-icon {
+    font-size: 1.8rem;
+}
+.contact-option h4 {
+    font-size: .7rem;
+    color: var(--color-light);
+    margin-bottom: .5rem;
+}
+.contact-option a {
+    font-size: .9rem;
+    border: 1px solid rgba(255, 255, 255, 0.185);
+    padding: .5rem;
+    border-radius: .3rem; 
+}
+.contact-option a:hover {
+    background: rgba(0, 0, 0, 0.521);
+}
+.contact-option h5 {
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+input, textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: .5rem;
+    background: transparent;
+    border: 2px solid var(--color-primary-variant);
+    resize: none;
+    color: var(--color-white);
+}
+::placeholder {
+    color: aliceblue;
+}
+
+
+/*============= Medeia Query ==============*/
+@media screen and (max-width: 1124px) {
+    .container.contact-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    textarea {
+        height: 10rem;
+    }      
+}
+@media screen and (max-width: 600px) {
+    .container.contact-container {
+        width: var(--container-width-sm);
+    }
+}
