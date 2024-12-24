@@ -5,10 +5,11 @@ import ME from '../../assets/akm.jpg'
 import BESTFAV from '../../assets/FAV.jpg'
 import BestFont from '../../assets/BESTFONT.jpg'
 import BESTBACK from '../../assets/BESTBACK.jpg'
-import INV from '../../assets/invoice.png'
 import SEA from '../../assets/sea.png'
 import BOOSUPBIZFAV from '../../assets/FAVBOOST.jpg'
 import BOOSUPBIZ from '../../assets/BOOSUPBIZ.png'
+import ECOM from '../../assets/ECOM.png'
+import ECOMBACK from '../../assets/ECOM_BACK.png'
 import SHIMUL from '../../assets/SHIMULBALA.png'
 import SHIMULFAV from '../../assets/SHIMULFAV.jpg'
 import DYNAMIC from '../../assets/DYNAMIC.png'
@@ -21,7 +22,7 @@ const Header = () => {
       <div className="container header__container">
         <h5>Hello I'am</h5>
         <h1>Amlan Kumar Mandol</h1>
-        <h5 className='text-light'>Web Developer</h5>
+        <h5 className='text-light'>Web App Developer</h5>
         <CTA/>
         <HeaderSocial/>
         
@@ -30,6 +31,44 @@ const Header = () => {
         
 
         <ul className="cards">
+
+          <li>
+            <a href="http://vblog.besttourinfo.com/" className="card">
+              <img src={ECOM} className="card__image" alt="" />
+              <div className="card__overlay">
+                <div className="card__header">
+                  <svg className="card__arc" xmlns="http://www.w3.org/2000/svg">
+                    <path />
+                  </svg>
+                  <img className="card__thumb" src={ME} alt="" />
+                  <div className="card__header-text">
+                    <h3 className="card__title">Front-End<br/> <span className="tcolor">E-COMMERCE</span></h3>
+                  </div>
+                </div>
+                <p className='btnn'>Live Demo</p>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://vblog.besttourinfo.com/admin-login" className="card">
+              <img src={ECOMBACK} className="card__image" alt="" />
+              <div className="card__overlay">
+                <div className="card__header">
+                  <svg className="card__arc" xmlns="http://www.w3.org/2000/svg">
+                    <path />
+                  </svg>
+                  <img className="card__thumb" src={ME} alt="" />
+                  <div className="card__header-text">
+                    <h3 className="card__title">Back-End <br/> <span className="tcolor">E-COMMERCE</span></h3>
+                    <p>Eamil: admin@gmail.com</p>
+                    <p>Password: password</p>
+                  </div>
+                </div>
+                <p className='btnn'>Live Demo</p>
+              </div>
+            </a>
+          </li>
 
           <li>
             <a href="http://vblog.besttourinfo.com/" className="card">
@@ -62,25 +101,6 @@ const Header = () => {
                     <h3 className="card__title">Back-End <br/> <span className="tcolor">Travel Agency</span></h3>
                     <p>Eamil: admin@gmail.com</p>
                     <p>Password: password</p>
-                  </div>
-                </div>
-                <p className='btnn'>Live Demo</p>
-              </div>
-            </a>
-          </li>
-
-          <li>
-            <a href="https://vue-invoice-app-v1.netlify.app/" className="card">
-              <img src={INV} className="card__image" alt="" />
-              <div className="card__overlay">
-                <div className="card__header">
-                  <svg className="card__arc" xmlns="http://www.w3.org/2000/svg">
-                    <path />
-                  </svg>
-                  <img className="card__thumb" src={ME} alt="" />
-                  <div className="card__header-text">
-                    <h3 className="card__title">Laravel Vue Js <br/> <span className="tcolor">Invoice App</span> </h3>
-                    
                   </div>
                 </div>
                 <p className='btnn'>Live Demo</p>

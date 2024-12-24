@@ -21,6 +21,13 @@ const Exprience = () => {
           <h3>Frontend Development</h3>
             <div className="exprience-content">
               <article className='exprience-details'>
+                  <SiVault className='icon'/>
+                  <div>
+                  <h4>Vue Js</h4>
+                  <small className='text-light'>Exprienced</small>
+                  </div>
+              </article>
+              <article className='exprience-details'>
                   <FaHtml5 className='icon'/>
                   <div>
                     <h4>HTML</h4>
@@ -31,7 +38,7 @@ const Exprience = () => {
                   <IoLogoCss3 className='icon'/>
                   <div>
                     <h4>CSS</h4>
-                  <small className='text-light'>Intermediate</small>
+                  <small className='text-light'>Exprienced</small>
                   </div>
               </article>
               <article className='exprience-details'>
@@ -55,13 +62,6 @@ const Exprience = () => {
                   <small className='text-light'>Intermediate</small>
                   </div>
               </article>
-              <article className='exprience-details'>
-                  <SiVault className='icon'/>
-                  <div>
-                  <h4>Vue Js</h4>
-                  <small className='text-light'>Exprienced</small>
-                  </div>
-              </article>
             </div>
         </div>
         <div className="exprinence-backend">
@@ -70,7 +70,7 @@ const Exprience = () => {
               <article className='exprience-details'>
                   <SiPhp className='icon'/>
                   <div>
-                  <h4>PHP</h4>
+                  <h4>PHP/LARAVEL</h4>
                   <small className='text-light'>Exprienced</small>
                   </div>
               </article>
@@ -92,7 +92,7 @@ const Exprience = () => {
                   <SiMysql className='icon'/>
                  <div>
                  <h4>MySql</h4>
-                  <small className='text-light'>Basic</small>
+                  <small className='text-light'>Exprienced</small>
                  </div>
               </article>
               <article className='exprience-details'>
