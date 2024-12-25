@@ -14,7 +14,7 @@ import SHIMUL from '../../assets/SHIMULBALA.png'
 import SHIMULFAV from '../../assets/SHIMULFAV.jpg'
 import DYNAMIC from '../../assets/DYNAMIC.png'
 import HeaderSocial from './HeaderSocial'
-
+import { CiTimer } from "react-icons/ci";
 
 const Header = () => {
   return (
@@ -33,7 +33,7 @@ const Header = () => {
         <ul className="cards">
 
           <li>
-            <a href="http://vblog.besttourinfo.com/" className="card">
+            <a href="https://mydemov1.com" target="_blank" className="card">
               <img src={ECOM} className="card__image" alt="" />
               <div className="card__overlay">
                 <div className="card__header">
@@ -43,6 +43,10 @@ const Header = () => {
                   <img className="card__thumb" src={ME} alt="" />
                   <div className="card__header-text">
                     <h3 className="card__title">Front-End<br/> <span className="tcolor">E-COMMERCE</span></h3>
+                    <div className="date">
+                      <CiTimer  className='service-list-icon'/>
+                      <small>05.10.2024</small>
+                    </div>
                   </div>
                 </div>
                 <p className='btnn'>Live Demo</p>
@@ -51,7 +55,7 @@ const Header = () => {
           </li>
 
           <li>
-            <a href="https://vblog.besttourinfo.com/admin-login" className="card">
+            <a href="https://mydemov1.com/admin-login" target="_blank" className="card">
               <img src={ECOMBACK} className="card__image" alt="" />
               <div className="card__overlay">
                 <div className="card__header">
@@ -61,8 +65,10 @@ const Header = () => {
                   <img className="card__thumb" src={ME} alt="" />
                   <div className="card__header-text">
                     <h3 className="card__title">Back-End <br/> <span className="tcolor">E-COMMERCE</span></h3>
-                    <p>Eamil: admin@gmail.com</p>
-                    <p>Password: password</p>
+                    <div className="date">
+                      <CiTimer  className='service-list-icon'/>
+                      <small>05.10.2024</small>
+                    </div>
                   </div>
                 </div>
                 <p className='btnn'>Live Demo</p>
@@ -71,7 +77,7 @@ const Header = () => {
           </li>
 
           <li>
-            <a href="http://vblog.besttourinfo.com/" className="card">
+            <a href="http://vblog.besttourinfo.com" target="_blank" className="card">
               <img src={BestFont} className="card__image" alt="" />
               <div className="card__overlay">
                 <div className="card__header">
@@ -81,6 +87,10 @@ const Header = () => {
                   <img className="card__thumb" src={BESTFAV} alt="" />
                   <div className="card__header-text">
                     <h3 className="card__title">Front-End<br/> <span className="tcolor">Travel Agency</span></h3>
+                    <div className="date">
+                      <CiTimer  className='service-list-icon'/>
+                      <small>03.02.2022</small>
+                    </div>
                   </div>
                 </div>
                 <p className='btnn'>Live Demo</p>
@@ -89,7 +99,7 @@ const Header = () => {
           </li>
 
           <li>
-            <a href="https://vblog.besttourinfo.com/admin-login" className="card">
+            <a href="https://vblog.besttourinfo.com/admin-login" target="_blank" className="card">
               <img src={BESTBACK} className="card__image" alt="" />
               <div className="card__overlay">
                 <div className="card__header">
@@ -99,13 +109,45 @@ const Header = () => {
                   <img className="card__thumb" src={BESTFAV} alt="" />
                   <div className="card__header-text">
                     <h3 className="card__title">Back-End <br/> <span className="tcolor">Travel Agency</span></h3>
-                    <p>Eamil: admin@gmail.com</p>
-                    <p>Password: password</p>
+                    <div className="date">
+                      <CiTimer  className='service-list-icon'/>
+                      <small>03.02.2022</small>
+                    </div>
                   </div>
                 </div>
                 <p className='btnn'>Live Demo</p>
               </div>
             </a>
+          </li>
+
+          <li>
+            <div className="card2">
+              <div className="login2">
+                <p><b>Link :</b></p>
+                <p><a target="_blank" href="https://mydemov1.com/admin-login"> mydemov1.com/admin-login</a></p>
+              </div>
+              <div className="login">
+                <p><b>Login :</b></p>
+                <p>admin@gmail.com</p>
+              </div>
+              <div className="login">
+                <p><b>Password :</b></p>
+                <p>password</p>
+              </div>
+
+              <div className="login2 mt-3">
+                <p><b>Link :</b></p>
+                <p><a target="_blank" href="https://vblog.besttourinfo.com/admin-login">https://vblog.besttourinfo.com/admin-login</a></p>
+              </div>
+              <div className="login">
+                <p><b>Login :</b></p>
+                <p>admin@gmail.com</p>
+              </div>
+              <div className="login">
+                <p><b>Password :</b></p>
+                <p>password</p>
+              </div>
+            </div>
           </li>
            
         </ul>

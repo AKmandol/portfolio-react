@@ -105,6 +105,38 @@ header {
     border: 2px solid rgb(0, 56, 177);
   }
   
+  .card2 {
+    background-color: #001b3f;
+    position: relative;
+    display: block;
+    height: 100%;  
+    border-radius: calc(var(--curve) * 1px);
+    overflow: hidden;
+    text-decoration: none;
+    border: 2px solid rgb(0, 56, 177);
+  }
+  
+  .card2 p{
+    font-size: 13px;
+    margin-right: 13px;
+  }
+  
+  .card2 a{
+    font-size: 12px;
+  }
+
+  .login{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    margin: 5px;
+  }
+
+  .mt-3{
+    margin-top: 80px;
+  }
+  
   .card__image {      
     width: 100%;
     height: auto;
@@ -170,8 +202,22 @@ header {
   
   .card__title {
     font-size: .9em;
-    margin: 0 0 .3em;
     color: rgb(255, 255, 255);
+  }
+  
+  .date .service-list-icon{
+    font-size: 2em;
+    color: #054572ea;
+    margin-right: 8px;
+    padding: 0 0 10px 0;
+  }
+  
+  .date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: rgba(233, 233, 233, 0.904);
   }
 
   .tcolor {

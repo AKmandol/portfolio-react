@@ -2,18 +2,19 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
-    padding: 0 5.2rem;
+    padding: 0;
 }
 .portfolio-item {
     background: var(--color-bg-variant);
-    padding: 1.2rem;
+    padding: .5rem;
     border-radius: 2rem;
     border: 1px solid transparent ;
     transition: var(--transition);
 }
 .portfolio-item:hover {
     background: transparent;
-    border-color: var(--color-primary-variant);   
+    border-color: var(--color-primary-variant);
+    cursor: zoom-in;
 }
 .portfolio-item-img {
     border-radius: 1.5rem;
@@ -22,33 +23,100 @@
 .portfolio-item h3 {
     margin: 1.2rem 0;
     text-align: center;
+    font-size: 14px;
+    color: #0793f7;
 }
 .portfolio-item-cta {
     margin-bottom: 1rem;
     text-align: center;
     font-size: .9rem;
 }
-.portfolio-item-cta .btn {
-    margin-right: 1rem;
-}
-.portfolio-item-cta .btn-primary {
-    margin-right: -1rem;
-    background: transparent;
-    color: #FF0000;
-}
+
+/* modal Css */
+.zoom-controls {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    display: grid;
+    gap: 10px;
+    z-index: 1001; /* Ensure buttons are above the modal content */
+  }
+  
+  .zoom-btn {
+    background-color: #fff;
+    border: none;
+    color: #333;
+    font-size: 1.5rem;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .zoom-btn:hover {
+    background-color: #ddd;
+    transform: scale(1.1);
+  }
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.2s ease; /* Smooth zoom */
+    }
+  
+  .close {
+    position: absolute;
+    top: -15px;
+    right: 10px;
+    font-size: 2rem;
+    color: #cf0b04;
+    cursor: pointer;
+    background: none;
+    border: none;
+    z-index: 10030;
+  }
+  
+  .close small{
+    font-size: 1.5rem;
+    padding-bottom: 100px;
+  }
+  
 
 /*============= Medeia Query ==============*/
 @media screen and (max-width: 1240px) {
     .portfolio-container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 1.2rem;
+        padding: 0;
     }
 }
 @media screen and (max-width: 1000px) {
     .portfolio-container {
-        grid-template-columns: repeat(2, minmax(250px, 1fr));
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
         gap: 1.2rem;
-        padding: 0 5rem;
+        padding: 0;
     }
 }
 @media screen and (max-width: 700px) {

@@ -16,13 +16,14 @@
     cursor: default;
 }
 .service-head {
-    background: var(--color-primary);
+    background: #001b3f;
     padding: 2rem;
+    border: 1px solid #4db5ff42;
     border-radius: 0 0 2rem 2rem;
     box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
 }
 .service-head h3 {
-    color: var(--color-bg);
+    color: #4DB5FF;
     font-size: 1.2rem;
     text-align: center;
 }

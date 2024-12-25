@@ -12,7 +12,7 @@ export const Contact = () => {
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
-
+    console.log("result.text");
     emailjs.sendForm('service_37tb2af', 'template_ar5nd5n', form.current, 'J9s0aqd-louZ2SBCt')
       .then((result) => {
           console.log(result.text);
@@ -52,7 +52,7 @@ export const Contact = () => {
          <input type="text" name='name' placeholder='Your Name' required/>
          <input type="email" name='email' placeholder='Your Email' required/>
          <input type="text" name='subject' placeholder='Email Subject (Optional)'/>
-         <textarea name="msg" rows="13" placeholder='Your Message' required></textarea>
+         <textarea name="msg" rows="14" placeholder='Your Message' required></textarea>
          <button type='submit' className='btn btn-primary'>Send Message</button>
         </form>
 
